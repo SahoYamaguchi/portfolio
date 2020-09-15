@@ -1,19 +1,19 @@
 - name: Portfolio
-  logo: /assets/works/04.png
+  logo: assets/works/04.png
   url: https://sahoyamaguchi.github.io/works/04
-  logo_webp: /assets/works/04.webp
+  logo_webp: assets/works/04.webp
 
 - name: Absent from Present
-  logo: /assets/works/03.JPG
+  logo: assets/works/03.JPG
   url: http://iiiexhibition.com/log/i3e20/#modal_work15
-  logo_webp: /assets/works/03.webp
+  logo_webp: assets/works/03.webp
 
 - name: VR Piano Visualizer
-  logo: /assets/works/02.png
+  logo: assets/works/02.png
   url: http://iiiexhibition.com/log/iiiEx2018/#modal_work8
-  logo_webp: /assets/works/02.webp
+  logo_webp: assets/works/02.webp
 
 - name: 東大講義「アイデアを形にするモノづくり体験」
-  logo: /assets/works/01.JPG
+  logo: assets/works/01.JPG
   url: https://monozemi.akg.t.u-tokyo.ac.jp/
-  logo_webp: /assets/works/01.webp
+  logo_webp: assets/works/01.webp
