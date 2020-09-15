@@ -22,7 +22,7 @@ title: Saho Yamaguchi's Portfolio
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Saho Yamaguchi | Direction, Engineerting, Photography and Design
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 url: "https://sahoyamaguchi.github.io/portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
