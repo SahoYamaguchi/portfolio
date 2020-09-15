@@ -45,11 +45,11 @@ body {
 /* ヘッダー */
 
 .no-webp #header {
-  background-image: url("/assets/sky.png");
+  background-image: url("assets/sky.png");
 }
 
 .webp #header {
-  background-image: url("/assets/sky.webp");
+  background-image: url("assets/sky.webp");
 }
 
 #header {
