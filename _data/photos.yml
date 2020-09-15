@@ -1,29 +1,29 @@
-- img: /assets/photos/06.JPG
-  img_webp: /assets/photos/06.webp
+- img: assets/photos/06.JPG
+  img_webp: assets/photos/06.webp
   url: https://www.instagram.com/p/CEb_A7zsYWX/
   name: 公園
 
-- img: /assets/photos/05.JPG
-  img_webp: /assets/photos/05.webp
+- img: assets/photos/05.JPG
+  img_webp: assets/photos/05.webp
   url: https://www.instagram.com/p/CEZRSZYME6V/
   name: 鉄塔
 
-- img: /assets/photos/04.JPG
-  img_webp: /assets/photos/04.webp
+- img: assets/photos/04.JPG
+  img_webp: assets/photos/04.webp
   url: https://www.instagram.com/p/CD6dcUusKjD/
   name: 水族館
 
-- img: /assets/photos/03.JPG
-  img_webp: /assets/photos/03.webp
+- img: assets/photos/03.JPG
+  img_webp: assets/photos/03.webp
   url: https://www.instagram.com/p/CDBrvObM5ER/
   name: 街（夜）
 
-- img: /assets/photos/02.jpg
-  img_webp: /assets/photos/02.webp
+- img: assets/photos/02.jpg
+  img_webp: assets/photos/02.webp
   url: https://www.instagram.com/p/CC5-KiAMugG/
   name: 家（ベランダ）
 
-- img: /assets/photos/01.JPG
-  img_webp: /assets/photos/01.webp
+- img: assets/photos/01.JPG
+  img_webp: assets/photos/01.webp
   url: https://www.instagram.com/p/CCgU9rasyNQ/
   name: 道あるいは公園
