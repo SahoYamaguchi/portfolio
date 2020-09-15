@@ -3,8 +3,8 @@ layout: post
 title: "Portfolio"
 num: 04
 year: 2020
-logo: /assets/works/04.png
-logo_webp: /assets/works/04.webp
+logo: assets/works/04.png
+logo_webp: assets/works/04.webp
 permalink: /works/04
 custom_css: post.css
 custom_js: false
