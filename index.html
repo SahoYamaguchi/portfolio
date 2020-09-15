@@ -1,0 +1,97 @@
+---
+layout: default
+title: Saho Yamaguchi's Portfolio
+type: website
+description: Saho Yamaguchi | Direction, Engineering, Photography and Design
+keywords: portfolio, ポートフォリオ
+url: https://sahoyamaguchi.github.io/
+custom_css: index.css
+custom_js: index.js
+using_slick: true
+---
+
+<!-- Header -->
+<div id="header">
+  <h1>Saho<br />Yamaguchi</h1>
+</div>
+<a href="#works">
+  <div id="scroll">
+    <img src="assets/scroll.png" alt="scroll down" />
+  </div>
+</a>
+
+<!-- 斜線 -->
+<div id="before_works"></div>
+
+<!-- works -->
+<div name="works" id="works">
+  <h2 class="section_title"><span>W</span>orks</h2>
+  <div class="flex wrapper">
+    {% for item in site.data.works %}
+    <article>
+        <a href="{{ item["url"] }}" >
+            <picture>
+              <source srcset="{{ item["logo_webp"] }}" type="image/webp"/>
+              <img src="{{ item["logo"] }}" alt="{{ item["name"] }}" class="work_logo">
+            </picture>
+            <h3 class="name">{{ item["name"] }}</h3>
+        </a>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- 斜線 -->
+<div id="after_works"></div>
+
+<!-- photography -->
+<div name="photography" id="photography">
+  <h2 class="section_title"><span>P</span>hotography</h2>
+  <div class="wrapper">
+    {% for item in site.data.photos %}
+    <div class="photo">
+      <a href="{{ item["url"] }}" target="_blank">
+        <picture>
+          <source srcset="{{ item["img_webp"] }}" type="image/webp"/>
+          <img src="{{ item["img"] }}" alt="{{ item["name"] }}">
+        </picture>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="https://www.instagram.com/saporiiin/" target="_blank">
+    <div class="btn">
+      <p>View on Instagram ></p>
+    </div>
+  </a>
+</div>
+
+<!-- before about -->
+<div id="before_about" onMouseDown="return false;" onSelectStart="return false">
+  <img src="assets/before_about.png" alt="背景">
+</div>
+
+<!-- about -->
+<div id="about" name="about">
+  <h2 class="section_title"><span>A</span>bout</h2>
+  <div class="wrapper">
+    <h3>Saho Yamaguchi</h3>
+    <p>
+      <br>
+      Direction, Engineering, Photography and Design<br>
+      <br>
+      Engineering | Java, Python, HTML, CSS, JavaScript<br>
+      <br>
+      <br>
+      Link<br>
+      * <a href="https://atcoder.jp/users/saporin" target="_blank">AtCoder</a><br>
+      * <a href="https://www.instagram.com/saporiiin/" target="_blank">Instagram</a><br>
+      * <a href="https://cocoda-design.com/saporin" target="_blank">Cocoda! design</a><br>
+    </p>
+    <a href="https://forms.gle/bAJsC3jwpE213m1FA" target="_blank">
+      <div class="btn">
+        <p>Contact ></p>
+      </div>
+    </a>
+  </div>
+</div>

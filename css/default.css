@@ -1,0 +1,146 @@
+body {
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  color: #707070;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/* ナビゲーション */
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 0;
+  justify-content: flex-end;
+}
+
+.nav-list-item {
+  padding: 20px 25px 10px;
+  font-size: 20px;
+  background-color: #f6fafe;
+  opacity: 0.8;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #707070;
+  display: block;
+  position: relative;
+}
+
+.nav-list-item a::after {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #5696eb;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-list-item a:hover::after {
+  width: 100%;
+}
+
+.nav-list-item.on {
+  padding: 12px 25px 10px;
+}
+
+.nav-list-item.on a {
+  border-bottom: solid 2px #5696eb;
+  padding: 8px 0px 0;
+}
+
+/* footer */
+footer {
+  background-color: #ebebeb;
+  color: #606060;
+  text-align: center;
+  height: 50px;
+  padding-top: 50px;
+  font-size: 15px;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* smartphone */
+@media screen and (max-width: 640px) {
+  #menu-btn {
+    height: 40px;
+    margin: 5px 85% 15px;
+  }
+
+  #menu-btn span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+
+  #menu-btn span:nth-child(1) {
+    margin-top: 15px;
+    top: 0;
+    background: #5696eb;
+  }
+
+  #menu-btn span:nth-child(2) {
+    top: 25px;
+    background: #72a4e6;
+  }
+
+  #menu-btn span:nth-child(3) {
+    top: 35px;
+    background: #80a7da;
+  }
+
+  #menu-btn.open span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
+  }
+  #menu-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-btn.open span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  nav .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: block;
+    width: 200px;
+    margin-right: 0;
+    margin-top: -20px;
+  }
+
+  .nav-list-item {
+    opacity: 1;
+  }
+
+  .nav-list-item.on a {
+    border-bottom: none;
+  }
+
+  .nav-list-item.on {
+    padding: 20px 25px 10px;
+  }
+
+  .nav-list-item a::after {
+    height: 0px;
+  }
+}

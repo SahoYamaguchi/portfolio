@@ -1,0 +1,244 @@
+/* 共通部分 */
+body {
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  color: #707070;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.site a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.site a:hover {
+  color: #5696eb;
+}
+
+.site .flex {
+  display: flex;
+}
+
+.section_title {
+  width: 78%;
+  margin: 0 auto;
+  padding: 100px 0 50px;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.section_title span {
+  color: #5696eb;
+}
+
+.btn {
+  background-color: #5696eb;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* ヘッダー */
+
+.no-webp #header {
+  background-image: url("/assets/sky.png");
+}
+
+.webp #header {
+  background-image: url("/assets/sky.webp");
+}
+
+#header {
+  background-size: cover;
+  background-position-y: -10px;
+  height: 70vh;
+  width: 78%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+#header h1 {
+  padding: 45vh 0 0 20px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 400;
+}
+
+#scroll {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#scroll img {
+  height: 50px;
+}
+
+/* 斜線 */
+#before_works {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100vw 0 0;
+  border-color: transparent #ebebeb transparent transparent;
+}
+
+/* works */
+#works {
+  background-color: #ebebeb;
+}
+
+#works .flex {
+  width: 65.2%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+#works article {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.work_logo {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.work_logo:hover {
+  opacity: 0.5;
+}
+
+#works .name {
+  margin-bottom: 80px;
+}
+
+/* 斜線 */
+#after_works {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100vw 0 0;
+  border-color: #ebebeb transparent transparent transparent;
+}
+
+/* photography */
+.slider {
+  display: none;
+}
+
+.slider.slick-initialized {
+  display: block;
+}
+
+.slick-active {
+  margin: 0 auto;
+}
+
+#photography .wrapper {
+  width: 67.8%;
+  margin: 0 auto;
+}
+
+#photography img {
+  width: 293px;
+  height: 293px;
+  object-fit: cover;
+}
+
+#photography .btn {
+  width: 350px;
+  height: 50px;
+  margin: 100px auto;
+  padding-top: 30px;
+}
+
+#before_about img {
+  width: 100%;
+}
+
+/* about */
+#about {
+  margin-top: -6px;
+  background-color: #f6fafe;
+}
+
+#about .wrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  line-height: 1.2;
+}
+
+#about h3 {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+#about .btn {
+  width: 300px;
+  height: 40px;
+  margin: 50px 0;
+  padding-top: 18px;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  #header {
+    background-position-y: 0;
+  }
+
+  #works article {
+    width: 200px;
+  }
+
+  .work_logo {
+    height: 200px;
+    width: 200px;
+  }
+
+  #photography img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* smartphone */
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 20px;
+  }
+  .section_title {
+    font-size: 35px;
+    padding: 50px 0 30px;
+  }
+
+  #header h1 {
+    padding-top: 55vh;
+    font-size: 35px;
+  }
+
+  #photography .btn {
+    width: 70%;
+    height: 30px;
+    margin: 50px auto;
+    padding-top: 15px;
+  }
+
+  #about h3 {
+    font-size: 30px;
+  }
+
+  #about .btn {
+    width: 60%;
+    height: 30px;
+    margin: 30px 0;
+    padding-top: 10px;
+  }
+}

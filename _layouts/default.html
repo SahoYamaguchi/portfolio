@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="title" content="{{ page.title }}" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="keywords" content="{{ page.keywords }}" />
+
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="{{ page.type }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:image" content="{ site.baseurl }}/assets/favicon.ico" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description}}" />
+    <!-- Facebook用設定 -->
+    <!-- <meta property="fb:app_id" content="App-ID(15文字の半角数字)" -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ page.title }}</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ site.baseurl }}/assets/favicon.ico"
+    />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.min.css" />
+
+    <!-- 共通部分 css -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/default.css" />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/css/{{ page.custom_css }}"
+    />
+
+    {% if page.using_slick %}
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    {% endif %}
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-list-item">
+          <a class="nav-link" href="{{ site.baseurl }}/#">Top</a>
+        </li>
+
+        <li class="nav-list-item">
+          <a class="nav-link" href="{{ site.baseurl }}/#works">Works</a>
+        </li>
+
+        <li class="nav-list-item">
+          <a class="nav-link" href="{{ site.baseurl }}/#photography"
+            >Photography</a
+          >
+        </li>
+
+        <li class="nav-list-item">
+          <a class="nav-link" href="{{ site.baseurl }}/#about">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Site wrapper -->
+    <div class="site">{{ content }}</div>
+
+    <!-- Footer -->
+    <footer>© 2020 Saho Yamaguchi / All rights reserved</footer>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- webp読み込み用 -->
+    <script
+      type="text/javascript"
+      src="{{ site.baseurl }}/js/modernizr-custom.js"
+    ></script>
+
+    {% if page.using_slick %}
+    <!-- slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    {% endif %}
+
+    <!-- js -->
+    <script src="{{ site.baseurl }}/js/default.js"></script>
+    {% if page.custom_js %}
+    <script src="{{ site.baseurl }}/js/{{ page.custom_js }}"></script>
+    {% endif %}
+  </body>
+</html>
