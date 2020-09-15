@@ -1,6 +1,6 @@
 - name: Portfolio
   logo: assets/works/04.png
-  url: https://sahoyamaguchi.github.io/works/04
+  url: /works/04
   logo_webp: assets/works/04.webp
 
 - name: Absent from Present
