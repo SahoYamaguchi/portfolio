@@ -53,7 +53,7 @@ $(function () {
     }
   }
 
-  $('a[href="#works"]').click(function () {
+  $("#srcoll").click(function () {
     var speed = 500;
     var href = $(this).attr("href");
     var target = $("#works");
