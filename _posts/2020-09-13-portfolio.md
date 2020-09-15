@@ -17,4 +17,4 @@ custom_js: false
 実装の大部分は HTML, CSS で記述。
 コンテンツの内容をマークダウン形式で作成することで、更新の手間を軽減した。
 
-[github-url]: https://jekyllrb.com/docs/home
+[github-url]: https://github.com/SahoYamaguchi/portfolio

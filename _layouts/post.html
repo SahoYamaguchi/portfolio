@@ -19,8 +19,11 @@ type: website
       </a>
     </div>
     <picture>
-      <source srcset="{{ page.logo_webp }}" type="image/webp" />
-      <img src="{{ page.logo }}" alt="{{ page.title }}" />
+      <source
+        srcset="{{ site.baseurl }}/{{ page.logo_webp }}"
+        type="image/webp"
+      />
+      <img src="{{ site.baseurl }}/{{ page.logo }}" alt="{{ page.title }}" />
     </picture>
   </div>
 </article>
